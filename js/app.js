@@ -239,7 +239,7 @@ class Application {
             return Promise.resolve(response.data);
         },
         post: async function () {
-
+            console.log("oke");
         },
         put: async function () {
 
