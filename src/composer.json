@@ -1,0 +1,7 @@
+{
+    "require": {
+        "bramus/router": "~1.6",
+        "league/plates": "^3.4",
+        "matthiasmullie/minify": "^1.3"
+    }
+}

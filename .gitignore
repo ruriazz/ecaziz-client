@@ -1,0 +1,6 @@
+*.lock
+.vscode
+/src/vendor/
+/public/assets/core/
+*error_log
+*.ini

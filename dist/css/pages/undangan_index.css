@@ -1,0 +1,24 @@
+tr.odd,
+tr.even {
+    cursor: pointer;
+}
+
+tr.even {
+    background-color: white;
+}
+
+tr.odd {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+div.scroll-loader {
+    text-align: center;
+    background-color: transparent;
+    display: none;
+}
+
+div.scroll-loader img {
+    width: 5rem;
+    margin: 2rem;
+    background-color: transparent;
+}
