@@ -8,15 +8,30 @@ if (!class_exists('ViewData')) {
         public array $link_style = [];
         public array $script_src = [];
         public array $data = [];
-        public String $page_title = "Elsya & Aziz";
+        public String $page_title = 'Elsya &#038; Aziz';
 
         public function __construct()
         {
             $init_meta = array(
-                [
-                    "name" => "author",
-                    "content" => "ruriazz"
-                ]
+                ["name" => "author", "content" => "ruriazz"],
+                ["name" => "robots", "content" => "noindex, nofollow"],
+                ["name" => "description", "content" => "Sunday, May 22nd, 2022 - Jakarta"],
+                ["property" => "og:type", "content" => "website"],
+                ["property" => "og:site_name", "content" => "ruriazz Wedding Invitation"],
+                ["property" => "og:url", "content" => base_url()],
+                ["property" => "twitter:url", "content" => base_url()],
+                ["property" => "og:image", "content" => base_url('assets/images/banner/banner_1200x630.jpg')],
+                ["property" => "twitter:image", "content" => base_url('assets/images/banner/banner_1200x630.jpg')],
+                ["property" => "twitter:card", "content" => "summary_large_image"],
+                ["property" => "twitter:creator", "content" => "@ruriazz"],
+                ["property" => "og:locale", "content" => "en_US"],
+                ["property" => "og:title", "content" => "Wedding of Elsya &#038; Aziz"],
+                ["property" => "og:description", "content" => "Sunday, May 22nd, 2022 - Jakarta"],
+                ["property" => "og:updated_time", "content" => (new DateTime())->format(DateTime::ATOM)],
+                ["property" => "article:published_time", "content" => (new DateTime('2022-03-31 23:59:59'))->format(DateTime::ATOM)],
+                ["property" => "article:modified_time", "content" => (new DateTime())->format(DateTime::ATOM)],
+                // ["property" => "", "content" => ""],
+                // ["name" => "", "content" => ""],
             );
 
             $this->create_meta($init_meta);
@@ -36,14 +51,7 @@ if (!class_exists('ViewData')) {
                 'css/style.css'
             ]);
         }
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
-        // <link rel="stylesheet" href="assets/">
+
         public function create_meta(array $data)
         {
             $meta = '<meta PROP_NAME="PROP_VALUE" content="CONTENT">';
@@ -63,10 +71,11 @@ if (!class_exists('ViewData')) {
                 array_push($meta_created, $new_meta);
             }
 
-            if (count($meta_created) > 0)
-                array_merge($this->html_meta, $meta_created);
+            if (count($meta_created) > 0) {
+                $new_meta = array_merge($this->html_meta, $meta_created);
+                $this->html_meta = array_unique($new_meta);
 
-            $this->html_meta = array_unique($this->html_meta);
+            }
         }
 
         public function add_body($view)
