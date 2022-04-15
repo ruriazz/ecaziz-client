@@ -1,7 +1,7 @@
 <?php
 
 $config = array(
-    'base_url' => 'http://localhost:8001/',
+    'base_url' => 'https://ecaaziz.link/',
     'autoload' => array(
         'helpers' => array(
             'assets_helper',

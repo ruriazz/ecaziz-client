@@ -15,6 +15,26 @@ class App {
         app.session = await Session.getInstance();
         app.api = await APIClient.getInstance();
 
+        app.browserUnsupport = setTimeout(function() {
+            const message = `
+                <div class="container text-center browser-unsupport" style="display: none;">
+                    Halaman ini tidak support dengan browser yang kamu gunakan.
+                    Mohon gunakan internet browser lain seperti <b>Google Chrome</b> <img src="${baseUrl('assets/logo/chrome.png')}" alt=""> atau <b>Safari</b> <img src="${baseUrl('assets/logo/safari.png')}"> untuk dapat membuka halaman ini dengan nyaman.
+                    <br>
+                    &#8212;<em>Terima kasih<em>&#8212;
+                </div>
+            `;
+
+            const preloader = $('div.preloader');
+            const ldsHeart = $('div.lds-heart');
+
+            preloader.append(message);
+            ldsHeart.fadeOut('slow', function() {
+                $('div.browser-unsupport').fadeIn();
+                $(this).remove();
+            });
+        }, 10000);
+
         const tokenSaved = await app.session.get('auth_data');
         if (tokenSaved) {
             const validToken = await app.api.fetch({
@@ -61,6 +81,38 @@ class App {
         window.location.reload();
     }
 
+    async isInvited() {
+        const query = new URLSearchParams(window.location.search);
+
+        if(!query.get('inv'))
+            return null;
+
+        const apiResponse = await this.api.fetch({
+            method: 'GET',
+            path: `/undangan/${query.get('inv')}`
+        });
+
+        if(!apiResponse.success)
+            return null;
+
+        let data = apiResponse.content;
+        data.link = data.link.replaceAll('BASE_URL', app_config.BASE_URL);
+        data.relation_header = data.person_type.split('&lt;|&gt;')[0].trim();
+        data.relation_body = data.person_type.split('&lt;|&gt;')[1].trim();
+
+        if(data.undangan_type == 'G') {
+            if(data.response)
+                delete data.response;
+
+            const rsvp = await this.session.get('rsvp');
+            if(rsvp)
+                data.response = [rsvp];
+        }
+
+        delete data.person_type;
+        return Promise.resolve(data);
+    }
+
     buildWhatsappMessage(undangan, encode = true) {
         let relationHeader = undangan.person_type.split('&lt;|&gt;')[0].trim();
         let relationBody = undangan.person_type.split('&lt;|&gt;')[1].trim();
@@ -79,6 +131,23 @@ class App {
             messageBody = encodeURIComponent(messageBody);
 
         return messageBody;
+    }
+
+    showSnackbar({text = 'default snackbar text', timeout = 1000, onShow = function(){}, onHide = function(){}} = {}) {
+        $('#snackbar').remove();
+        $('body').append(`<div id="snackbar">${text}</div>`);
+        const snackbar = $('#snackbar');
+        snackbar.addClass('show');
+        if(typeof onShow == 'function')
+            onShow();
+
+        setTimeout(function(){
+            snackbar.fadeOut(function() {
+                $(this).remove();
+                if(typeof onHide == 'function')
+                    onHide();
+            });
+        }, timeout);
     }
 
     openWhatsapp(message, phone = null) {
@@ -123,7 +192,7 @@ class App {
 
     showLoader(func = undefined) {
         const loader = `
-        <div class="preloader">
+        <div class="preloader" style="background: rgba(255, 255, 255, .5)">
             <div class="lds-heart">
                 <div></div>
             </div>
@@ -139,11 +208,18 @@ class App {
     }
 
     hideLoader(func = undefined) {
+        const $this = this;
         const loader = $('.preloader');
 
         loader.fadeOut('slow', function () {
             $('body').css('overflow', '');
             loader.remove();
+
+            if($this.browserUnsupport !== false) {
+                clearInterval($this.browserUnsupport);
+                $this.browserUnsupport = false;
+            }
+
             if (typeof func == 'function')
                 func();
         })

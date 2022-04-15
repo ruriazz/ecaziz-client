@@ -43,7 +43,7 @@
         <!-- Sidebar Section -->
         <?php _load_view('template/menu'); ?>
         <!-- Content Section -->
-        <div id="oliven-main">
+        <div id="oliven-main" style="width: 100%;">
             <!-- Header & Slider -->
             <?php
             if (isset($view_data->html_body)) {
@@ -78,18 +78,20 @@
         $(document).ready(function() {
             $('#home').vegas({
                 slides: [{
-                    src: "assets/images/slider.jpg"
+                    src: "<?php echo base_url('assets/images/sliders/s_1.jpg'); ?>"
                 }, {
-                    src: "assets/images/slider2.jpg"
+                    src: "<?php echo base_url('assets/images/sliders/s_2.jpg'); ?>"
                 }, {
-                    src: "assets/images/slider3.jpg"
+                    src: "<?php echo base_url('assets/images/sliders/s_3.jpg'); ?>"
                 }, {
-                    src: "assets/images/slider4.jpg"
+                    src: "<?php echo base_url('assets/images/sliders/s_4.jpg'); ?>"
+                }, {
+                    src: "<?php echo base_url('assets/images/sliders/s_5.jpg'); ?>"
                 }],
                 overlay: true,
                 transition: 'fade2',
                 animation: 'kenburnsDownLeft',
-                transitionDuration: 1000,
+                transitionDuration: 2000,
                 delay: 10000,
                 animationDuration: 10000
             });
