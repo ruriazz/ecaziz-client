@@ -48,7 +48,7 @@ class Home {
             $('#gallery').append(`
                 <div class="container">
                     <div class="row gallery-filter mt-3">
-                        <div class="col-md-4 gallery-item ceremony">
+                        <div class="col-6 gallery-item ceremony">
                             <a href="${baseUrl('assets/images/gallery/1.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/1.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>
@@ -58,7 +58,7 @@ class Home {
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 gallery-item party">
+                        <div class="col-6 gallery-item party">
                             <a href="${baseUrl('assets/images/gallery/2.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/2.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>
@@ -68,7 +68,7 @@ class Home {
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 gallery-item ceremony">
+                        <div class="col-6 gallery-item ceremony">
                             <a href="${baseUrl('assets/images/gallery/3.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/3.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>
@@ -78,7 +78,7 @@ class Home {
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 gallery-item party">
+                        <div class="col-6 gallery-item party">
                             <a href="${baseUrl('assets/images/gallery/4.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/4.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>
@@ -88,7 +88,7 @@ class Home {
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 gallery-item ceremony">
+                        <div class="col-6 gallery-item ceremony">
                             <a href="${baseUrl('assets/images/gallery/5.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/5.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>
@@ -98,7 +98,7 @@ class Home {
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 gallery-item party">
+                        <div class="col-6 gallery-item party">
                             <a href="${baseUrl('assets/images/gallery/6.jpg')}" class="img-zoom">
                                 <div class="gallery-box">
                                     <div class="gallery-img"> <img src="${baseUrl('assets/images/gallery/6.jpg')}" class="img-fluid mx-auto d-block" alt=""> </div>

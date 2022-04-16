@@ -1,3 +1,10 @@
-.gallery-item {
-    width: 46vw;;
+@media only screen and (min-device-width : 768px) {
+    .gallery-item {
+        width: 20em!important;
+    }
+}
+
+.whenwhere .item .content h5 {
+    text-transform: none;
+    font-weight: 800;
 }

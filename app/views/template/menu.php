@@ -10,10 +10,10 @@
     <nav class="oliven-main-menu">
         <ul>
             <li><a href="/#home">Home</a></li>
-            <li><a href="/#couple">Couple</a></li>
-            <li><a href="/#whenwhere">When & Where</a></li>
+            <li><a href="/#couple">Kami</a></li>
+            <li><a href="/#whenwhere">Kapan & dimana</a></li>
             <li><a href="/#story">Our Story</a></li>
-            <li><a href="/#gallery">Gallery</a></li>
+            <li><a href="/#gallery">Galeri</a></li>
             <li><a href="/#rsvp">R.S.V.P</a></li>
         </ul>
     </nav>
@@ -21,7 +21,7 @@
     <div class="footer1"> <span class="separator"></span>
         <p>
             Elsya & Aziz
-            <br />May 22nd, 2022 - Jakarta
+            <br />22 Mei 2022 - Jakarta
         </p>
     </div>
 </aside>
