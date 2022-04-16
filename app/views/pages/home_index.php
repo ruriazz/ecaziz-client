@@ -12,12 +12,15 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
             </div>
             <div class="col-md-12 text-center">
                 <h1 class="hero-title">Elsya & Aziz</h1>
-                <p class="hero-subtitle">22 May, 2022 - Jakarta</p>
+                <p class="hero-subtitle">22 Mei 2022 - Jakarta</p>
                 <div class="arrow bounce text-center">
                     <a class="btn-open-undangan" href="/#couple"> <i class="ti-heart"></i></a>
                 </div>
                 <div class="arrow arrow-label btn-open-undangan">
-                    <a class="btn-open-undangan" href="/#couple">OPEN <i class="ti-angle-double-right"></i></a>
+                    <a class="btn-open-undangan" href="/#couple">
+                        BUKA UNDANGAN 
+                        <!-- <i class="ti-angle-double-right"></i> -->
+                    </a>
                 </div>
             </div>
         </div>
@@ -32,32 +35,13 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
     
     <div class="container">
         <div class="row mb-60">
-            <div class="col-md-6">
-                <div class="item toright mb-30 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img"> <img src="<?php echo base_url('assets/images/couple/the_bride.jpg'); ?>" alt=""> </div>
-                    <div class="info valign">
-                        <div class="full-width">
-                            <h6>Elsya Arystin Ningroem</h6> 
-                            <span>The Bride</span>
-                            <p>Putri kedua dari Bapak Basri & Ibu Nurleni</p>
-                            <div class="social">
-                                <div class="full-width">
-                                    <a href="https://www.facebook.com/elsya.arystin" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
-                                    <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
-                                    <a href="https://www.instagram.com/elsyaarystin/" target="_blank" class="icon"> <i class="ti-instagram"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
+        <div class="col-md-6">
                 <div class="item mb-30 animate-box" data-animate-effect="fadeInRight">
                     <div class="img"> <img src="<?php echo base_url('assets/images/couple/the_groom.jpg'); ?>" alt=""> </div>
                     <div class="info valign">
                         <div class="full-width">
                             <h6>Aziz Ruri Suparman</h6> 
-                            <span>The Groom</span>
+                            <!-- <span>The Groom</span> -->
                             <p>Putra pertama dari Bapak Darsono & Ibu Jaepurningsih</p>
                             <div class="social">
                                 <div class="full-width">
@@ -70,13 +54,32 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="item toright mb-30 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="img"> <img src="<?php echo base_url('assets/images/couple/the_bride.jpg'); ?>" alt=""> </div>
+                    <div class="info valign">
+                        <div class="full-width">
+                            <h6>Elsya Arystin Ningroem</h6> 
+                            <!-- <span>The Bride</span> -->
+                            <p>Putri kedua dari Bapak Basri & Ibu Nurleni</p>
+                            <div class="social">
+                                <div class="full-width">
+                                    <a href="https://www.facebook.com/elsya.arystin" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
+                                    <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
+                                    <a href="https://www.instagram.com/elsyaarystin/" target="_blank" class="icon"> <i class="ti-instagram"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
                 <h3 class="oliven-couple-title">Are getting married!</h3>
                 <h4 class="oliven-couple-subtitle">May 22nd, 2022 — Jakarta, Indonesia</h4>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- Countdown -->
@@ -84,7 +87,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
     <div class="container">
         <div class="row">
             <div class="section-head col-md-12">
-                <h4>We will become a family in</h4>
+                <!-- <h4>We will become a family in</h4> -->
             </div>
         </div>
         <div class="row">
@@ -104,15 +107,16 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <div id="whenwhere" class="whenwhere section-padding bg-pink">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-30"> <span class="oliven-title-meta">Questions</span>
-                <h2 class="oliven-title">When & Where</h2>
+            <div class="col-md-12 mb-30"> 
+                <!-- <span class="oliven-title-meta">Questions</span> -->
+                <h2 class="oliven-title">Kapan & dimana</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="item">
                     <div class="content">
-                        <h5>Akad Nikah</h5>
+                        <h5 class="text-center">AKAD NIKAH</h5>
                         <p>
                             <i class="ti-location-pin"></i> Jl. Kelurahan III No. 5 <br>Duren Sawit Jakarta Timur
                         </p>
@@ -130,7 +134,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 
                 <div class="item mt-2">
                     <div class="content">
-                        <h5>Resepsi <br>(Keluarga Elsya)</h5>
+                        <h5 class="text-center">RESEPSI <br>(Keluarga Elsya)</h5>
                         <p>
                             <i class="ti-location-pin"></i> Jl. Kelurahan III No. 5 <br>Duren Sawit, Jakarta Timur
                         </p>
@@ -147,7 +151,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 
                 <div class="item mt-2">
                     <div class="content">
-                        <h5>Resepsi <br>(Keluarga Aziz)</h5>
+                        <h5 class="text-center">RESEPSI <br>(Keluarga Aziz)</h5>
                         <p>
                             <i class="ti-location-pin"></i> Lapangan Kantor RW 05 Pegangsaan Dua <br> Kelapa Gading, Jakarta Utara
                         </p>
@@ -176,7 +180,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 
 <!-- Our Story -->
 <div id="story" class="story section-padding">
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-5 mb-30">
                 <div class="story-img animate-box" data-animate-effect="fadeInLeft">
@@ -199,79 +203,21 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                     sollicitudin mi suscipit non sagie the fermen.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- See you -->
 <div id="seeyou" class="seeyou section-padding bg-img bg-fixed" data-background="assets/images/banner-3.jpg">
     <div class="container">
         <div class="row">
             <div class="section-head col-md-12 text-center"> <span><i class="ti-heart"></i></span>
-                <h4>Looking forward to see you!</h4>
+                <!-- <h4>Looking forward to see you!</h4> -->
                 <h3>22.05.2022</h3>
             </div>
         </div>
     </div>
 </div>
 <!-- Gallery -->
-<div id="gallery" style="margin-top: 100px; margin-bottom: 100px;" class="bg-secondary">
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12 mb-30"> 
-                <span class="oliven-title-meta">Gallery</span>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <section class="splide" id="main-splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/1.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/2.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/3.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/4.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/5.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/6.jpg') ?>" alt="" srcset="">
-                </li>
-            </ul>
-        </div>
-    </section> -->
-    <!-- <section class="splide" id="thumbnail-splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/1.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/2.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/3.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/4.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/5.jpg') ?>" alt="" srcset="">
-                </li>
-                <li class="splide__slide">
-                    <img src="<?php echo base_url('assets/images/gallery/6.jpg') ?>" alt="" srcset="">
-                </li>
-            </ul>
-        </div>
-    </section> -->
-    
-</div>
+<div id="gallery"></div>
 <!-- Confirmation -->
 <div id="rsvp" class="section-padding bg-img bg-fixed pb-0" data-background="assets/images/banner-2.jpg">
     <div class="container rsvp-form-container mb-4">

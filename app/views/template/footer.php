@@ -8,7 +8,7 @@
                         <span>Elsya <small>&</small> Aziz</span>
                     </a>
                 </h2>
-                <p class="copyright">May 22nd, 2022 - Jakarta, Indonesia</p>
+                <p class="copyright">22 Mei 2022 - Jakarta, Indonesia</p>
             </div>
         </div>
     </div>
