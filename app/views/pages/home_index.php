@@ -18,7 +18,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                 </div>
                 <div class="arrow arrow-label btn-open-undangan">
                     <a class="btn-open-undangan" href="/#couple">
-                        BUKA UNDANGAN 
+                        &#8212; BUKA UNDANGAN &#8212;
                         <!-- <i class="ti-angle-double-right"></i> -->
                     </a>
                 </div>
@@ -42,7 +42,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                         <div class="full-width">
                             <h6>Aziz Ruri Suparman</h6> 
                             <!-- <span>The Groom</span> -->
-                            <p>Putra pertama dari Bapak Darsono & Ibu Jaepurningsih</p>
+                            <p>Putra pertama dari <br> <b>Bapak Darsono & Ibu Jaepurningsih</b></p>
                             <div class="social">
                                 <div class="full-width">
                                     <a href="https://www.facebook.com/ruriazz/" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
@@ -61,7 +61,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                         <div class="full-width">
                             <h6>Elsya Arystin Ningroem</h6> 
                             <!-- <span>The Bride</span> -->
-                            <p>Putri kedua dari Bapak Basri & Ibu Nurleni</p>
+                            <p>Putri kedua dari <br> <b>Bapak Basri & Ibu Nurleni</b></p>
                             <div class="social">
                                 <div class="full-width">
                                     <a href="https://www.facebook.com/elsya.arystin" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
@@ -121,9 +121,9 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                             <i class="ti-location-pin"></i> Jl. Kelurahan III No. 5 <br>Duren Sawit Jakarta Timur
                         </p>
                         <p>
-                            <i class="ti-calendar"></i> <span>22 May 2022</span>
+                            <i class="ti-calendar"></i> <span>Minggu, 22 Mei 2022</span>
                             <br>
-                            <i class="ti-time"></i> <span>12:00am - 13:00pm</span>
+                            <i class="ti-time"></i> <span>08:00 - Selesai</span>
                         </p>
                         <div class="text-center">
                             <a class="button" href="<?php echo $loc_akad; ?>" target="_blank"><i class="ti-map-alt"></i> Google
@@ -138,9 +138,9 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                         <p>
                             <i class="ti-location-pin"></i> Jl. Kelurahan III No. 5 <br>Duren Sawit, Jakarta Timur
                         </p>
-                            <i class="ti-calendar"></i> <span>22 May 2022</span>
+                            <i class="ti-calendar"></i> <span>Minggu, 22 Mei 2022</span>
                             <br>
-                            <i class="ti-time"></i> <span>12:00am - 13:00pm</span>
+                            <i class="ti-time"></i> <span>11:00 - Selesai</span>
                         </p>
                         <div class="text-center">
                         <a class="button" href="<?php echo $loc_akad; ?>" target="_blank"><i class="ti-map-alt"></i> Google
@@ -156,9 +156,9 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                             <i class="ti-location-pin"></i> Lapangan Kantor RW 05 Pegangsaan Dua <br> Kelapa Gading, Jakarta Utara
                         </p>
                         <p>
-                            <i class="ti-calendar"></i> <span>22 May 2022</span>
+                            <i class="ti-calendar"></i> <span>Sabtu, 28 Mei 2022</span>
                             <br>
-                            <i class="ti-time"></i> <span>12:00am - 13:00pm</span>
+                            <i class="ti-time"></i> <span>10:00 - Selesai</span>
                         </p>
                         <div class="text-center">
                             <a class="button" href="<?php echo $loc_nm2; ?>" target="_blank"><i class="ti-map-alt"></i> Google
@@ -180,37 +180,20 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 
 <!-- Our Story -->
 <div id="story" class="story section-padding">
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-5 mb-30">
-                <div class="story-img animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img"> <img src="assets/images/story.jpg" class="img-fluid" alt=""> </div>
-                </div>
-            </div>
-            <div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-                <h4 class="oliven-story-subtitle">Our love.</h4>
-                <h3 class="oliven-story-title">Our Story</h3>
-                <p>Curabit aliquet orci elit genes tristique lorem commodo vitae. Tuliaum tincidunt nete
-                    sede gravida aliquam, neque libero hendrerit magna, sit amet mollis lacus ithe maurise.
-                    Dunya erat volutpat edat themo the druanye semper.</p>
-                <p>Luality fringilla duiman at elit vinibus viverra nec a lacus themo the druanye sene
-                    sollicitudin mi suscipit non sagie the fermen.</p>
-                <p>Phasellus viverra tristique justo duis vitae diam neque nivamus ac est augue artine
-                    aringilla dui at elit finibus viverra nec a lacus. Nedana themo eros odio semper soe
-                    suscipit non. Curabit aliquet orci elit genes tristique.</p>
-                <h4>Feb 22, 2014, We Said Yes!</h4>
-                <p>Luality fringilla duiman at elit finibus viverra nec a lacus themo the druanye sene
-                    sollicitudin mi suscipit non sagie the fermen.</p>
-            </div>
-        </div>
-    </div> -->
+    <div class="container text-center">
+        <p class="surat-ar-rum-21 arabic">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ             
+        </p>
+
+        <blockquote>Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</blockquote>
+        <cite>Surah Ar-Rum - 21</cite>
+    </div>
 </div>
 <!-- See you -->
 <div id="seeyou" class="seeyou section-padding bg-img bg-fixed" data-background="assets/images/banner-3.jpg">
     <div class="container">
         <div class="row">
             <div class="section-head col-md-12 text-center"> <span><i class="ti-heart"></i></span>
-                <!-- <h4>Looking forward to see you!</h4> -->
                 <h3>22.05.2022</h3>
             </div>
         </div>
@@ -221,7 +204,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <!-- Confirmation -->
 <div id="rsvp" class="section-padding bg-img bg-fixed pb-0" data-background="assets/images/banner-2.jpg">
     <div class="container rsvp-form-container mb-4">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-6 offset-md-3 bg-white p-40"> 
                 <span class="oliven-title-meta text-center" id="rsvp-form-title">Will you attend?</span>
                 <h2 class="oliven-title text-center">R.S.V.P</h2>
@@ -231,13 +214,13 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="rsvp-attend-choice" id="rsvp-attend-choice1" value="attend" checked>
                             <label class="form-check-label csp" for="rsvp-attend-choice1">
-                                Attend
+                                Hadir
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="rsvp-attend-choice" id="rsvp-attend-choice2" value="uncertain">
                             <label class="form-check-label csp" for="rsvp-attend-choice2">
-                                Uncertain
+                                Belum pasti
                             </label>
                         </div>
                     </div>

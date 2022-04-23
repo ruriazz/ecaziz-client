@@ -41,6 +41,15 @@ class Home {
             invitationResponse = [];
         }
 
+        // const isOpened = await app.isOpened();
+        // console.log("OPENED", isOpened);
+        // if(!isOpened) {
+        //     $('body').addClass('init');
+        //     $('.oliven-nav-toggle').addClass('init');
+        // } else {
+            
+        // }
+
         $('body').addClass('init');
         $('.oliven-nav-toggle').addClass('init');
 
@@ -150,11 +159,14 @@ class Home {
             // thumbnailSplide.mount();
 
             setTimeout(function() {
-                if($(document).scrollTop() > 0) {
-                    $([document.documentElement, document.body]).animate({
-                        scrollTop: $("#home").offset().top
-                    }, 1000);
-                }
+                $(document).ready(function() {
+                    $($($('nav.oliven-main-menu ul').children()[0]).children()).click();
+                });
+                // if($(document).scrollTop() > 0) {
+                //     $([document.documentElement, document.body]).animate({
+                //         scrollTop: $("#home").offset().top
+                //     }, 1000);
+                // }
             }, 50);
         });
 
@@ -309,7 +321,9 @@ class Home {
                             delete newResponse.text;
                             addResponseItem(newResponse, false);
 
-                            await session.set('rsvp', newResponse);
+                            if(invitation.undangan_type == 'G') {
+                                await session.set(`rsvp-${invitation.id}`, newResponse);
+                            }
 
                             rsvpAttendChoice.prop('disabled', true);
                             $(rsvpAttendChoice.parent()).addClass('disabled');
@@ -367,6 +381,8 @@ class Home {
             $('.arrow').remove();
             $('aside#oliven-aside').css('display', '');
             $('div#oliven-main').css('width', '');
+
+            session.set('app-opened', 'true');
         });
 
         btnSoundControll.click(function() {

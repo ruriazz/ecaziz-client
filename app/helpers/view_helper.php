@@ -8,14 +8,14 @@ if (!class_exists('ViewData')) {
         public array $link_style = [];
         public array $script_src = [];
         public array $data = [];
-        public String $page_title = 'Elsya &#038; Aziz';
+        public String $page_title = 'Elsya dan Aziz';
 
         public function __construct()
         {
             $init_meta = array(
                 ["name" => "author", "content" => "ruriazz"],
                 ["name" => "robots", "content" => "noindex, nofollow"],
-                ["name" => "description", "content" => "Sunday, May 22nd, 2022 - Jakarta"],
+                ["name" => "description", "content" => "Minggu, 22 Mei 2022 - Jakarta"],
                 ["property" => "og:type", "content" => "website"],
                 ["property" => "og:site_name", "content" => "ruriazz Wedding Invitation"],
                 ["property" => "og:url", "content" => base_url()],
@@ -25,8 +25,8 @@ if (!class_exists('ViewData')) {
                 ["property" => "twitter:card", "content" => "summary_large_image"],
                 ["property" => "twitter:creator", "content" => "@ruriazz"],
                 ["property" => "og:locale", "content" => "en_US"],
-                ["property" => "og:title", "content" => "Wedding of Elsya &#038; Aziz"],
-                ["property" => "og:description", "content" => "Sunday, May 22nd, 2022 - Jakarta"],
+                ["property" => "og:title", "content" => "Wedding of Elsya and Aziz"],
+                ["property" => "og:description", "content" => "Minggu, 22 Mei 2022 - Jakarta"],
                 ["property" => "og:updated_time", "content" => (new DateTime())->format(DateTime::ATOM)],
                 ["property" => "article:published_time", "content" => (new DateTime('2022-03-31 23:59:59'))->format(DateTime::ATOM)],
                 ["property" => "article:modified_time", "content" => (new DateTime())->format(DateTime::ATOM)],

@@ -1,7 +1,7 @@
 <?php
 
 $config = array(
-    'base_url' => 'http://192.168.6.26:8081/',
+    'base_url' => 'https://ecaaziz.link/',
     'autoload' => array(
         'helpers' => array(
             'assets_helper',

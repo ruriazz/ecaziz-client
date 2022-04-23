@@ -104,13 +104,19 @@ class App {
             if(data.response)
                 delete data.response;
 
-            const rsvp = await this.session.get('rsvp');
+            const rsvp = await this.session.get(`rsvp-${data.id}`);
             if(rsvp)
                 data.response = [rsvp];
         }
 
         delete data.person_type;
         return Promise.resolve(data);
+    }
+
+    async isOpened() {
+        const session = await this.session.get('app-opened');
+
+        return Promise.resolve(session);
     }
 
     buildWhatsappMessage(undangan, encode = true) {

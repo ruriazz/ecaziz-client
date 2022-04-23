@@ -13,3 +13,8 @@
         </div>
     </div>
 </div>
+<div class="main-footer text-center">
+    <a href="https://github.com/ruriazz" target="_blank">
+        <span>ruriazz@github</span>
+    </a>
+</div>
