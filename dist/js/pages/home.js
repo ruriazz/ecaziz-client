@@ -214,8 +214,13 @@ class Home {
         };
         
 
+        const bankSection = $('div.bank-section');
         if(invitation) {
-            console.log(invitation);
+            if(invitation.created_by.id == 2) {
+                bankSection.append(` <h2 class="text-center">Wedding Gift</h2> <div class="row justify-content-evenly container-fluid text-center"> <div class="col-md-6 py-2"> <div class="card"> <img src="${baseUrl('assets/images/logo/mandiri.jpg')}" class="card-img-top p-2" alt="Bank Mandiri"> <div class="card-body"> <h5 class="card-title">An. Elsya Arystin Ningroem</h5> <p class="card-text" style="letter-spacing: 2.5px; font-weight: bold;">1560013670650</p></div></div></div><div class="col-md-6 py-2"> <div class="card"> <img src="${baseUrl('assets/images/logo/ovo.jpg')}" class="card-img-top" alt="OVO"> <div class="card-body"> <h5 class="card-title">An. Elsya Arystin Ningroem</h5> <p class="card-text" style="letter-spacing: 2.5px; font-weight: bold;">083870094475</p></div></div></div></div>`);
+            } else {
+                bankSection.remove();
+            }
 
             $('.welcome-card span.inner-name').html(`${invitation.relation_header} ${invitation.person_name}`.capitalize());
             $('.welcome-card').addClass('show');
@@ -361,6 +366,7 @@ class Home {
             $('.arrow').css('top', '20vh');
             $('div.rsvp-form-container').remove();
             // $($('.oliven-main-menu ul').children()[5]).remove();
+            bankSection.remove();
 
         }
 

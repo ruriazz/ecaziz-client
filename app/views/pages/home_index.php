@@ -30,17 +30,17 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <div id="couple" class="bridegroom clear section-padding bg-pink">
     <div class="container text-center font-weight-bold mb-4">
         Mahasuci Allah telah menciptakan makhluk hidup dengan berpasang-pasangan. Begitu pula manusia. Sungguh besar rahmat dan karunia yang diberikan-Nya kepada keluarga Kami.
-        Maka izinkan Kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dan saudara/i dalam acara pernikahan  kami : 
+        Maka izinkan Kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dan saudara/i dalam acara pernikahan kami :
     </div>
-    
+
     <div class="container">
         <div class="row mb-60">
-        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="item mb-30 animate-box" data-animate-effect="fadeInRight">
                     <div class="img"> <img src="<?php echo base_url('assets/images/couple/the_groom.jpg'); ?>" alt=""> </div>
                     <div class="info valign">
                         <div class="full-width">
-                            <h6>Aziz Ruri Suparman</h6> 
+                            <h6>Aziz Ruri Suparman</h6>
                             <!-- <span>The Groom</span> -->
                             <p>Putra pertama dari <br> <b>Bapak Darsono & Ibu Jaepurningsih</b></p>
                             <div class="social">
@@ -59,7 +59,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                     <div class="img"> <img src="<?php echo base_url('assets/images/couple/the_bride.jpg'); ?>" alt=""> </div>
                     <div class="info valign">
                         <div class="full-width">
-                            <h6>Elsya Arystin Ningroem</h6> 
+                            <h6>Elsya Arystin Ningroem</h6>
                             <!-- <span>The Bride</span> -->
                             <p>Putri kedua dari <br> <b>Bapak Basri & Ibu Nurleni</b></p>
                             <div class="social">
@@ -107,7 +107,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <div id="whenwhere" class="whenwhere section-padding bg-pink">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-30"> 
+            <div class="col-md-12 mb-30">
                 <!-- <span class="oliven-title-meta">Questions</span> -->
                 <h2 class="oliven-title">Kapan & dimana</h2>
             </div>
@@ -138,12 +138,12 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                         <p>
                             <i class="ti-location-pin"></i> Jl. Kelurahan III No. 5 <br>Duren Sawit, Jakarta Timur
                         </p>
-                            <i class="ti-calendar"></i> <span>Minggu, 22 Mei 2022</span>
-                            <br>
-                            <i class="ti-time"></i> <span>11:00 - Selesai</span>
+                        <i class="ti-calendar"></i> <span>Minggu, 22 Mei 2022</span>
+                        <br>
+                        <i class="ti-time"></i> <span>11:00 - Selesai</span>
                         </p>
                         <div class="text-center">
-                        <a class="button" href="<?php echo $loc_akad; ?>" target="_blank"><i class="ti-map-alt"></i> Google
+                            <a class="button" href="<?php echo $loc_akad; ?>" target="_blank"><i class="ti-map-alt"></i> Google
                                 Map</a>
                         </div>
                     </div>
@@ -167,7 +167,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
                     </div>
                 </div>
 
- 
+
                 <!-- <div class="owl-carousel owl-theme">
                     
                     
@@ -182,7 +182,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <div id="story" class="story section-padding">
     <div class="container text-center">
         <p class="surat-ar-rum-21 arabic">
-        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ             
+            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
         </p>
 
         <blockquote>Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</blockquote>
@@ -205,7 +205,7 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
 <div id="rsvp" class="section-padding bg-img bg-fixed pb-0" data-background="assets/images/banner-2.jpg">
     <div class="container rsvp-form-container mb-4">
         <div class="row justify-content-center">
-            <div class="col-md-6 offset-md-3 bg-white p-40"> 
+            <div class="col-md-6 offset-md-3 bg-white p-40">
                 <span class="oliven-title-meta text-center" id="rsvp-form-title">Will you attend?</span>
                 <h2 class="oliven-title text-center">R.S.V.P</h2>
                 <br>
@@ -253,6 +253,10 @@ $loc_nm2 = 'https://goo.gl/maps/8eio3PaAiuUCvcNh9';
             <ul class="response-list"></ul>
         </div>
     </div>
+</div>
+
+<div class="bank-section py-4">
+    
 </div>
 
 <button data-pause="false" class="sound-controll init"><i class="ti-control-pause"></i></button>
